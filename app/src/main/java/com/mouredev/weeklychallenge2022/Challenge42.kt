@@ -21,3 +21,17 @@ package com.mouredev.weeklychallenge2022
  *
  */
 
+fun main() {
+    transform(celsius = "13ºF")
+}
+
+private fun transform(celsius: String? = null, fahrenheit: String? = null) {
+
+    if (celsius == null && fahrenheit != null) {
+        var end = fahrenheit[fahrenheit.length - 2]
+        println(end)
+        //(fahrenheit - 32) * 5 / 9;
+    } else if (fahrenheit == null && celsius != null) {
+        //((9 * celsius) / 5) + 32
+    }
+}
